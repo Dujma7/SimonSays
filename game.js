@@ -25,7 +25,10 @@ function checkAnswer() {
         }
         else {
             $("h1").text("Failed, Press Any Key To Restart");
-    }
+            setTimeout(function () {
+                playSound("wrong");
+            }, 300)  
+        }
 }
 
 function nextSequence() {
